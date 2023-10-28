@@ -58,6 +58,8 @@ h6 {
 
 body {
   height: 100vh;
+  font-family: var(--ff-main);
+  color: var(--color-main);
 }
 
 /* ============================= */
@@ -68,6 +70,7 @@ body {
   margin: 0 auto;
   overflow: hidden;
   display: flex;
+  padding-top: 34px;
   flex-direction: column;
 }
 
@@ -81,12 +84,24 @@ body {
 }
 
 .header {
+  display: flex;
+  align-items: center;
+  min-height: 47px;
+  color: var(--color-title);
+  font-weight: 600;
 }
+
 .header__container {
 }
+
 .header-logo {
+  display: inline-block;
+  margin-right: auto;
+  width: 151px;
+  height: 47px;
 }
 .header-logo__img {
+  height: inherit;
 }
 .header__nav {
 }
@@ -94,13 +109,42 @@ body {
 }
 .header-nav__menu {
 }
+
 .nav-menu {
+  display: flex;
+  gap: 40px;
+  margin-right: 64px;
 }
+
 .nav-menu__item {
 }
 .nav-menu__link {
 }
+
+.nav-menu__link_active {
+  color: var(--color-main);
+}
+
 .header__btn {
+  width: 97px;
+  height: 32px;
+  background: var(--bg-more);
+  border-radius: 15px 0;
+  border: 2px solid var(--bg-more);
+  color: var(--color-more);
+  transition: all ease-in-out 0.28s;
+}
+
+.header__btn:hover {
+  cursor: pointer;
+  background: var(--color-more);
+  color: var(--bg-more);
+  box-shadow: -5px 5px 5px var(--bg-more);
+}
+
+.header__btn:active {
+  transform: translate(-1px, 1px);
+  box-shadow: none;
 }
 
 @media screen and (min-width: 1400px) {

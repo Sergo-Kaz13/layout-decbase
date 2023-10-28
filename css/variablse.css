@@ -1,4 +1,17 @@
 :root {
-  --ff-open-sans: "Open Sans", sans-serif;
-  --ff-poppins: "Poppins", sans-serif;
+  /* --- font family --- */
+
+  --ff-main: "Open Sans", sans-serif;
+  --ff-more: "Poppins", sans-serif;
+
+  /* --- color --- */
+
+  --color-main: #646464;
+  --color-title: #212121;
+  --color-more: #fff;
+
+  /* --- background --- */
+
+  --bg-more: #caa892;
+  --bg-btn: #37806b;
 }
