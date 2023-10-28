@@ -1,0 +1,79 @@
+/* ==============RESER-CSS=================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* =============================== */
+
+body {
+  height: 100vh;
+}
+
+/* ============================= */
+
+.wrapper {
+  min-height: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =================================== */
+
+[class*="__container"] {
+  max-width: 1374px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
