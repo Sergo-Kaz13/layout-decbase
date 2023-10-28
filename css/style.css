@@ -1,3 +1,5 @@
+@import "variablse.css";
+
 /* ==============RESER-CSS=================== */
 
 *,
@@ -76,6 +78,29 @@ body {
   width: 100%;
   padding: 0 10px;
   margin: 0 auto;
+}
+
+.header {
+}
+.header__container {
+}
+.header-logo {
+}
+.header-logo__img {
+}
+.header__nav {
+}
+.header-nav {
+}
+.header-nav__menu {
+}
+.nav-menu {
+}
+.nav-menu__item {
+}
+.nav-menu__link {
+}
+.header__btn {
 }
 
 @media screen and (min-width: 1400px) {
