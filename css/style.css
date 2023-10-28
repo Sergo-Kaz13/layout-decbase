@@ -112,13 +112,38 @@ body {
 
 .nav-menu {
   display: flex;
-  gap: 40px;
+  flex-wrap: wrap;
+  gap: 10px 40px;
   margin-right: 64px;
 }
 
 .nav-menu__item {
 }
+
 .nav-menu__link {
+  position: relative;
+  transition: all ease-in-out 0.28s;
+  cursor: default;
+}
+
+.nav-menu__link:not(.nav-menu__link_active):hover {
+  cursor: pointer;
+}
+
+.nav-menu__link:not(.nav-menu__link_active)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-title);
+  transition: all ease-in-out 0.28s;
+}
+
+.nav-menu__link:hover::before {
+  width: 100%;
 }
 
 .nav-menu__link_active {
