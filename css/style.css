@@ -1,22 +1,17 @@
 @import "variablse.css";
-
 /* ==============RESER-CSS=================== */
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
 * {
   margin: 0;
 }
-
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
-
 img,
 picture,
 video,
@@ -25,25 +20,21 @@ svg {
   display: block;
   max-width: 100%;
 }
-
 input,
 button,
 textarea,
 select {
   font: inherit;
 }
-
 ul,
 ol,
 li {
   list-style: none;
 }
-
 a {
   text-decoration: none;
   color: inherit;
 }
-
 p,
 h1,
 h2,
@@ -53,17 +44,13 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
-
 /* =============================== */
-
 body {
   height: 100vh;
   font-family: var(--ff-main);
   color: var(--color-main);
 }
-
 /* ============================= */
-
 .wrapper {
   min-height: 100%;
   max-width: 1920px;
@@ -73,27 +60,23 @@ body {
   padding-top: 34px;
   flex-direction: column;
 }
-
 /* =================================== */
-
 [class*="__container"] {
   max-width: 1374px;
   width: 100%;
   padding: 0 10px;
   margin: 0 auto;
 }
-
 .header {
   display: flex;
+  column-gap: 30px;
   align-items: center;
   min-height: 47px;
   color: var(--color-title);
   font-weight: 600;
 }
-
 .header__container {
 }
-
 .header-logo {
   display: inline-block;
   margin-right: auto;
@@ -109,27 +92,26 @@ body {
 }
 .header-nav__menu {
 }
-
 .nav-menu {
   display: flex;
+  justify-content: flex-end;
   flex-wrap: wrap;
   gap: 10px 40px;
   margin-right: 64px;
 }
-
+#menu {
+  display: none;
+}
 .nav-menu__item {
 }
-
 .nav-menu__link {
   position: relative;
   transition: all ease-in-out 0.28s;
   cursor: default;
 }
-
 .nav-menu__link:not(.nav-menu__link_active):hover {
   cursor: pointer;
 }
-
 .nav-menu__link:not(.nav-menu__link_active)::before {
   content: "";
   display: block;
@@ -141,15 +123,12 @@ body {
   background: var(--color-title);
   transition: all ease-in-out 0.28s;
 }
-
 .nav-menu__link:hover::before {
   width: 100%;
 }
-
 .nav-menu__link_active {
   color: var(--color-main);
 }
-
 .header__btn {
   width: 97px;
   height: 32px;
@@ -159,33 +138,111 @@ body {
   color: var(--color-more);
   transition: all ease-in-out 0.28s;
 }
-
 .header__btn:hover {
   cursor: pointer;
   background: var(--color-more);
   color: var(--bg-more);
   box-shadow: -5px 5px 5px var(--bg-more);
 }
-
 .header__btn:active {
   transform: translate(-1px, 1px);
   box-shadow: none;
 }
-
-@media screen and (min-width: 1400px) {
+@media (max-width: 1200px) {
 }
-
-@media screen and (min-width: 1200px) {
+@media (max-width: 992px) {
 }
-
-@media screen and (min-width: 992px) {
+@media (max-width: 768px) {
+  .header-nav {
+    order: 3;
+  }
+  .header__btn {
+    margin-right: 60px;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .menu-burger {
+  }
+  .menu-burger label {
+    position: absolute;
+    z-index: 100;
+    right: 30px;
+    top: 30px;
+    width: 35px;
+    height: 35px;
+  }
+  .menu-burger span {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 5px;
+    background: var(--bg-more);
+    transition: all ease-in-out 0.28s;
+  }
+  .menu-burger label::after,
+  .menu-burger label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: var(--bg-more);
+    transition: all ease-in-out 0.28s;
+  }
+  .menu-burger label::after {
+    top: 0;
+    left: 0;
+  }
+  .menu-burger label::before {
+    bottom: 0;
+    left: 0;
+  }
+  #menu:checked ~ label span {
+    display: none;
+  }
+  #menu:checked ~ label::after,
+  #menu:checked ~ label::before {
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(-45deg);
+    background: var(--color-more);
+  }
+  #menu:checked ~ label::after {
+    transform: rotate(45deg);
+  }
+  #menu:checked ~ ul.nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    row-gap: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    padding-right: 90px;
+    overflow-y: scroll;
+    background: var(--bg-more);
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--color-more);
+  }
+  .nav-menu__link:hover:before {
+    display: none;
+  }
 }
-
-@media screen and (min-width: 768px) {
+@media (max-width: 576px) {
+  .header {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
 }
-
-@media screen and (min-width: 576px) {
-}
-
+/* 
 @media screen and (width < 576px) {
-}
+} */
