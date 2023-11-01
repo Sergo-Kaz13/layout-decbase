@@ -10,7 +10,15 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
     <script src="./js/main.js" defer></script>
     <title>Decbase</title>
   </head>
@@ -61,7 +69,7 @@
         <section class="project project__container">
           <div class="project__info project-info">
             <h4 class="project-info__subtitle">MODERN INTERIOR</h4>
-            <h2 class="project-info__title">Create Your Interior Design.</h2>
+            <h1 class="project-info__title">Create Your Interior Design.</h1>
             <div class="project-info__text">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -78,6 +86,101 @@
             <img src="./img/interior.jpg" alt="interior" />
           </div>
           <img class="project__pattern" src="./img/Group54.svg" alt="" />
+        </section>
+
+        <section class="service service__container">
+          <h4 class="service__subtitle">WHAT WE DO</h4>
+          <h2 class="service__title">Our Service</h2>
+
+          <div class="service__slider swiper">
+            <div class="service__swiper-wrapper swiper-wrapper">
+              <!-- Slides -->
+              <div class="service__swiper-slide swiper-slide">
+                <div class="service-slide__img">
+                  <img src="./img/interior.png" alt="Interior" />
+                </div>
+                <div class="service-slide__info">
+                  <h4 class="service-slide__info_title">Interior Design</h4>
+                  <p class="service-slide__info_text">
+                    Lorem ipsum dolor amet consectetur adipiscing elit sed
+                    eiusmod tempor incididunt ut labore.
+                  </p>
+                </div>
+              </div>
+
+              <div class="service__swiper-slide swiper-slide">
+                <div class="service-slide__img">
+                  <img src="./img/architecture-1.png" alt="Architecture" />
+                </div>
+                <div class="service-slide__info">
+                  <h4 class="service-slide__info_title">Architecture</h4>
+                  <p class="service-slide__info_text">
+                    Lorem ipsum dolor amet consectetur adipiscing elit sed
+                    eiusmod tempor incididunt ut labore.
+                  </p>
+                </div>
+              </div>
+
+              <div class="service__swiper-slide swiper-slide">
+                <div class="service-slide__img">
+                  <img src="./img/planning.png" alt="Planning" />
+                </div>
+                <div class="service-slide__info">
+                  <h4 class="service-slide__info_title">Planning</h4>
+                  <p class="service-slide__info_text">
+                    Lorem ipsum dolor amet consectetur adipiscing elit sed
+                    eiusmod tempor incididunt ut labore.
+                  </p>
+                </div>
+              </div>
+              <div class="service__swiper-slide swiper-slide">
+                <div class="service-slide__img">
+                  <img src="./img/interior.png" alt="Interior" />
+                </div>
+                <div class="service-slide__info">
+                  <h4 class="service-slide__info_title">Interior Design</h4>
+                  <p class="service-slide__info_text">
+                    Lorem ipsum dolor amet consectetur adipiscing elit sed
+                    eiusmod tempor incididunt ut labore.
+                  </p>
+                </div>
+              </div>
+
+              <div class="service__swiper-slide swiper-slide">
+                <div class="service-slide__img">
+                  <img src="./img/architecture-1.png" alt="Architecture" />
+                </div>
+                <div class="service-slide__info">
+                  <h4 class="service-slide__info_title">Architecture</h4>
+                  <p class="service-slide__info_text">
+                    Lorem ipsum dolor amet consectetur adipiscing elit sed
+                    eiusmod tempor incididunt ut labore.
+                  </p>
+                </div>
+              </div>
+
+              <div class="service__swiper-slide swiper-slide">
+                <div class="service-slide__img">
+                  <img src="./img/planning.png" alt="Planning" />
+                </div>
+                <div class="service-slide__info">
+                  <h4 class="service-slide__info_title">Planning</h4>
+                  <p class="service-slide__info_text">
+                    Lorem ipsum dolor amet consectetur adipiscing elit sed
+                    eiusmod tempor incididunt ut labore.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-block">
+              <div class="swiper-button-prev">
+                <img src="./img/slider-arrow.png" alt="arrow prev" />
+              </div>
+              <div class="swiper-button-next">
+                <img src="./img/slider-arrow.png" alt="arrow next" />
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </div>

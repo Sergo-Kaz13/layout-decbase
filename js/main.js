@@ -14,3 +14,19 @@ menu.addEventListener("click", (e) => {
     a.classList.add("nav-menu__link_active");
   }
 });
+
+const swiper = new Swiper(".service__slider", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: false,
+  centeredSlidesBounds: true,
+  slidesPerView: 3,
+  spaceBetween: 37,
+  centeredSlides: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
