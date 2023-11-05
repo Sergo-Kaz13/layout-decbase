@@ -244,6 +244,9 @@ body {
   object-fit: cover;
 }
 /* ============-SERVICE-=============== */
+.service:not(:last-child) {
+  margin-bottom: 200px;
+}
 .service__subtitle {
   font-family: var(--ff-more);
   font-size: 20px;
@@ -379,6 +382,9 @@ body {
   min-height: 758px;
   gap: 93px;
 }
+.about:not(:last-child) {
+  margin-bottom: 224px;
+}
 .about-img {
   flex: 1 1 681px;
   border-radius: 140px 0;
@@ -438,6 +444,55 @@ body {
   min-height: 43px;
   width: 100%;
 }
+/* ---MARKET--- */
+.market {
+  display: flex;
+  gap: 109px;
+  min-height: 754px;
+}
+.market-info {
+  flex: 1 1 528px;
+  align-self: center;
+}
+.market-info__years {
+}
+.market-info__title {
+  color: var(--color-title);
+  font-family: var(--ff-more);
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 2px;
+}
+.market-info__btn {
+}
+.market-img {
+  flex: 1 1 682px;
+  position: relative;
+  border-radius: 140px 0;
+  height: 726px;
+  margin-right: 31px;
+  margin-bottom: 28px;
+}
+.market-img::before {
+  position: absolute;
+  content: "";
+  z-index: -5;
+  left: 31px;
+  top: 28px;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  border: 2px solid #b0855b;
+}
+.market-img img {
+  position: absolute;
+  border-radius: inherit;
+  left: 0;
+  height: 0;
+  width: 100%;
+  height: 100%;
+}
 @media (min-width: 1920px) {
   .project__pattern {
     display: block;
@@ -478,6 +533,19 @@ body {
   .about-img::before {
     bottom: calc((10px + (32 - 10) * ((100vw - 320px) / (1374 - 320))));
     right: calc((12px + (36 - 12) * ((100vw - 320px) / (1374 - 320))));
+  }
+  /* ---SECTION MARKET--- */
+  .market {
+    gap: calc(10px + (103 - 10) * ((100vw - 320px) / (1374 - 320)));
+  }
+  .market-img {
+    border-radius: calc(30px + (140 - 30) * ((100vw - 320px) / (1374 - 320))) 0;
+    height: calc(420px + (726 - 420) * ((100vw - 320px) / (1375 - 320)));
+    margin-right: calc((10px + (31 - 10) * ((100vw - 320px) / (1374 - 320))));
+  }
+  .market-img::before {
+    top: calc((8px + (28 - 8) * ((100vw - 320px) / (1374 - 320))));
+    left: calc((10px + (31 - 10) * ((100vw - 320px) / (1374 - 320))));
   }
 }
 @media (max-width: 1200px) {
@@ -576,6 +644,10 @@ body {
   }
   /* ---SECTION ABOUT--- */
   .about {
+    flex-wrap: wrap;
+  }
+  /* ---SECTION MARKET--- */
+  .market {
     flex-wrap: wrap;
   }
 }
