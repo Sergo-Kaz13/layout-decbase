@@ -19,31 +19,64 @@ const swiper = new Swiper(".service__slider", {
   // Optional parameters
   direction: "horizontal",
   loop: false,
-  centeredSlidesBounds: true,
+  // centeredSlidesBounds: true,
   slidesPerView: 3,
   spaceBetween: 37,
-  centeredSlides: true,
+  // centeredSlides: true,
 
   breakpoints: {
     // when window width is >= 320px
     320: {
       slidesPerView: 1,
-      spaceBetween: 20,
     },
     // when window width is >= 480px
-    780: {
+    600: {
       slidesPerView: 2,
-      spaceBetween: 30,
+      spaceBetween: 50,
     },
     // when window width is >= 640px
-    1195: {
+    880: {
       slidesPerView: 3,
+      spaceBetween: 50,
     },
+    // when window width is >= 640px
+    // 1195: {
+    //   slidesPerView: 3,
+    //   spaceBetween: 50,
+    // },
   },
 
   // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".service-next",
+    prevEl: ".service-prev",
   },
 });
+
+const swiper3 = new Swiper(".reviews-slider", {
+  direction: "horizontal",
+  loop: true,
+  slidesPerView: 2,
+  spaceBetween: 81,
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    980: {
+      spaceBetween: 20,
+      slidesPerView: 2,
+    },
+    1140: {
+      spaceBetween: 81,
+      slidesPerView: 2,
+    },
+  },
+
+  navigation: {
+    nextEl: ".reviews-next",
+    prevEl: ".reviews-prev",
+  },
+});
+
+// ----------------------------------------
