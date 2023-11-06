@@ -60,6 +60,9 @@ body {
   padding-top: 34px;
   flex-direction: column;
 }
+.main {
+  flex: 1 1 auto;
+}
 /* =================================== */
 [class*="__container"] {
   max-width: 1374px;
@@ -806,6 +809,147 @@ body {
 .sign-up__btn:hover {
   cursor: pointer;
   opacity: 0.8;
+}
+/* ---FOOTER--- */
+.footer {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  min-height: 473px;
+  background: #f8f8f8;
+}
+.footer ul {
+  margin: 0;
+  padding: 0;
+}
+.footer-wrapper {
+  flex: 1 1 auto;
+  padding-top: 93px;
+}
+.quick__title,
+.company__title,
+.contact__title,
+.follow__title {
+  color: var(--color-title);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.67;
+  margin-bottom: 19px;
+}
+.quick__items,
+.company__items,
+.contact__items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 18px;
+}
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer-info__logo-footer {
+}
+.footer-logo-block {
+}
+.header-logo {
+}
+.footer-logo {
+  margin-bottom: 15px;
+}
+.header-logo__img {
+}
+.footer-logo-block__text {
+  max-width: 350px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 1.56;
+}
+.footer-info__quick {
+}
+.quick {
+}
+.quick__title {
+}
+.quick__items {
+}
+.quick_item {
+}
+.link {
+}
+.footer-company {
+}
+.company {
+}
+.company__title {
+}
+.company__items {
+}
+.company__item {
+}
+.company__link {
+}
+.footer__contact {
+}
+.contact {
+}
+.contact__title {
+}
+.contact__items {
+}
+.contact__item {
+}
+.contact__link {
+}
+.footer__follow {
+}
+.follow {
+}
+.follow__title {
+}
+.follow__items {
+  display: flex;
+  gap: 8px;
+}
+.follow__item {
+}
+.follow__link {
+  display: inline-block;
+  position: relative;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #d5d5d5;
+  transition: all ease-in-out 0.28s;
+}
+.follow__link:hover {
+  cursor: pointer;
+  background: #37806b;
+}
+.follow__link img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 58px;
+  border-top: 1px solid #c4c4c4;
+}
+.footer-copyright__link {
+  font-size: 18px;
+}
+.footer-copyright__link span {
+  color: #37806b;
 }
 /* ---MEDIA--- */
 @media (min-width: 1920px) {
