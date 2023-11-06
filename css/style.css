@@ -560,6 +560,9 @@ body {
 /* ---REVIEWS--- */
 .reviews {
 }
+.reviews:not(:last-child) {
+  margin-bottom: 180px;
+}
 .reviews-block {
 }
 .reviews__contaier {
@@ -729,6 +732,81 @@ body {
 }
 .blog-item__button {
 }
+/* ---SECTION SIGN UP--- */
+.sign-up {
+  min-height: 634px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sign-up__title {
+  position: relative;
+  color: var(--color-title);
+  font-family: var(--ff-more);
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: 3.83px;
+  text-align: center;
+  padding-bottom: 25px;
+  margin-bottom: 40px;
+}
+.sign-up__title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 461px;
+  width: 100%;
+  height: 1px;
+  background: #c4c4c4;
+}
+.sign-up__text {
+  max-width: 647px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.56;
+  margin-bottom: 30px;
+}
+.sign-up__form {
+  position: relative;
+  max-width: 772px;
+  width: 100%;
+  border-radius: 20px 0;
+  overflow: hidden;
+  background: #eee;
+}
+.sign-up__input {
+  width: 100%;
+  height: 50px;
+  padding-right: 185px;
+  padding-left: 25px;
+  border: none;
+  background: none;
+  color: inherit;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+.sign-up__btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 180px;
+  background: var(--bg-btn);
+  color: var(--color-more);
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all ease-in-out 0.28s;
+}
+.sign-up__btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
 /* ---MEDIA--- */
 @media (min-width: 1920px) {
   .project__pattern {
@@ -797,6 +875,10 @@ body {
   }
   .blog__items {
     column-gap: calc(20px + (153 - 20) * ((100vw - 320px) / (1374 - 320)));
+  }
+  /* ---SECTION SIGN UP--- */
+  .sign-up__title {
+    font-size: calc(30px + (48 - 30) * ((100vw - 320px) / (1374 - 320)));
   }
 }
 @media (max-width: 1200px) {
@@ -917,6 +999,14 @@ body {
   .header {
     flex-wrap: wrap;
     row-gap: 30px;
+  }
+  .sign-up__form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sign-up__btn {
+    position: initial;
+    width: 100%;
   }
 }
 /* 
